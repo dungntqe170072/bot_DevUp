@@ -1,4 +1,3 @@
-const {inviteChannel} = require('../../config.json');
 const { getChange, updateInvite } = require('./invite');
 const { setRole } = require('./role');
 
