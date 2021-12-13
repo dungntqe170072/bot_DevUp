@@ -75,7 +75,7 @@ const updateInvite = (invitation, usesCount) => {
 
 const invite = async (interaction, options) => {
      let invite;
-     if (interaction.memberPermissions.has(Permissions.FLAGS.ADMINISTRATOR)){
+     if (interaction.memberPermissions.has(Permissions.FLAGS.CREATE_INSTANT_INVITE)){
           try {
                if (options === undefined) throw 'Options is not undefined!'
                let channels = await interaction.guild.channels.fetch();
